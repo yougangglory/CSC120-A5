@@ -8,29 +8,34 @@ public class Boot {
   
     private String direction;
   
-    /* Constructor */
-    public Boot(String direction) {
-        this.direction = direction.toLowerCase();
-    }
 
-    /*
-     * TODO: Modify this method to print ASCII Art Boot
-     */
-    public void display() {
-        if (this.direction.equals("left")) {
-          System.out.println("Left boot?");
-        } else if (this.direction.equals("right")) {
-          System.out.println("Right boot?");
-        } else {
-          System.out.println("Which boot?");
-        }
-    }
+/* Constructor */
+public Boot(String direction) {
+  this.direction = direction.toLowerCase();
+  
+}
 
-    /* main method (for testing) */
-    public static void main(String[] args) {
-        Boot myLeftBoot = new Boot("left");
-        Boot myRightBoot = new Boot("right");
-        myLeftBoot.display();
-        myRightBoot.display();
-    }
+public Boot() {
+}
+
+/*
+* TODO: Modify this method to print ASCII Art Boot
+*/
+public void display() {
+  if (this.direction.equals("left")) {
+    System.out.print("        |_____|");
+  } else if (this.direction.equals("right")) {
+    System.out.print("|_____|");
+  } else {
+    System.out.print("which boot?");
+  }
+}
+
+/* main method (for testing) */
+public static void main(String[] args) {
+  Boot myLeftBoot = new Boot("left");
+  Boot myRightBoot = new Boot("right");
+  myLeftBoot.display();
+  myRightBoot.display();
+}
 }
