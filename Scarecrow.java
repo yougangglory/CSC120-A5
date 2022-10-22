@@ -50,8 +50,11 @@ class Scarecrow {
     public static void main(String[] args) {
 
         // TODO: Don't forget to update the line below if you modify the constructor
-        Scarecrow myScarecrow = new Scarecrow(new Banner("HAPPY FALL TO YOU ALL !"),new Pumpkin(), new Shirt(), new Pants(),new Boot("left"), new Boot("right"));
-
+        Scarecrow myScarecrow = new Scarecrow(new Banner("HAPPY FALL TO YOU  !"),new Pumpkin(), new Shirt(), new Pants(),new Boot("left"), new Boot("right"));
+      /* use the message passed in the command line to produce the banner 
+       *I think this is the constructor to run the Scarescrow on the command line and use the message passed in for the banner
+       *  Scarecrow myScarecrow = new Scarecrow(new Banner(args[0]),new Pumpkin(), new Shirt(), new Pants(),new Boot("left"), new Boot("right"));
+       */ 
         // If a message was passed in on the command line, extract and store it
         // TODO: in Step 4, you'll pass this value along to your Banner constructor
        // if (args.length > 0) {
@@ -62,3 +65,4 @@ class Scarecrow {
     }
 
 }
+

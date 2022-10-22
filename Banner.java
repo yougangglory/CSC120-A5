@@ -12,10 +12,13 @@ public class Banner {
     /* Constructor */
     public Banner(String m) {
         this.message = m;
+        
+
+        
     }
 
     /*
-     * TODO: Modify this method to print a decorative banner, resized to fit the message
+     *  Print a decorative banner, resized to fit the message
      */
     public void display() {
        
@@ -23,32 +26,30 @@ public class Banner {
        for (int i=0; i<this.message.length(); i++){
         System.out.print("*"+"~");
         
-    }
-    System.out.println(" ");
+         }
+       System.out.println(" ");
        
-       String [] arrayName = new String [this.message.length()];
        for (int i=0; i<this.message.length(); i++){
         System.out.print("="+"+");
-    }
-    
-    System.out.println(" ");
-      //  length.String= lenght.this.message;
-      
+         }
+        System.out.println(" ");
+
         System.out.println("~* "+this.message +"*~");
         
-        for (int i=0; i<this.message.length(); i++){
+       for (int i=0; i<this.message.length(); i++){
             System.out.print("+"+"+");
         }
         System.out.println(" ");
         for (int i=0; i<this.message.length(); i++){
-            System.out.print("*"+"~");}
-            System.out.println(" ");
+            System.out.print("*"+"~");
         }
+            System.out.println(" ");
+    }
                        
 
     /* main method (for testing) */
     public static void main(String[] args) {
-        Banner myBanner = new Banner("  HAPPY FALL, EVERYONE!");
+        Banner myBanner = new Banner(" Happy fall everyone ");
         myBanner.display();
     }
 }

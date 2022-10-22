@@ -18,7 +18,7 @@ public class Pants {
         System.out.println("         |$ * ||  o |   ");
         System.out.println("         |____||____| ");  
     }
-    
+
 
     /* main method (for testing) */
     public static void main(String[] args) {

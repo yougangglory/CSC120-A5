@@ -130,3 +130,4 @@ This says "Check to see if there's anything stored in the `args` array (i.e., if
 > java Scarecrow "Happy fall, everyone!"
 ```
 The `String` "Happy fall, everyone!" (which immediately follows the call to `java Scarecrow` on the command line) is passed into the call to `Scarecrow.main(...)` and is stored in the first position of the `String[] args` array. The code to retrieve this value is already present; just pass it into your `Banner` constructor, and you should then be able to generate custom ASCII Scarecrows from the command line to your heart's content!
+s
